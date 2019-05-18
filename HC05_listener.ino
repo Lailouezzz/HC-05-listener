@@ -9,8 +9,8 @@
 #define HC05_RX 12 // TODO : select your RX pin
 #define DEBUG
 #ifdef DEBUG
-#define printD(x) Serial.print(x)
-#define printlnD(x) Serial.println(x)
+#define printD(...) Serial.print(__VA_ARGS__)
+#define printlnD(...) Serial.println(__VA_ARGS__)
 #else
 #define printD(x)
 #define printlnD(x)
